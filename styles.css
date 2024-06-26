@@ -5,6 +5,7 @@ body {
 .tree {
     align-self: center;
     font-size: 16px;
+
 }
 
 .tree ul {
@@ -102,4 +103,19 @@ body {
 
 #latin {
     font-style: italic;
+}
+table, th, td {
+    border: 1px solid;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.box {
+    width: 100%;
+    margin-bottom: 100px;
+}
+.tree li a:target {
+    background: #c8e4f8;
+    color: #000;
 }

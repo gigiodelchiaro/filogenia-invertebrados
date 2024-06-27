@@ -7,41 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="tree">
-        <ul>
-            <li class="box">
-                <a href="#info-sobre" class="info-sobre">Invertebrados</a>
-                <ul>
-                    <li>
-                        <a href="#info-porifera"  class="info-porifera">Poríferos</a>
-                    </li>
-                    <li>
-                        <a href="#info-cnidaria" class="info-cnidaria">Cnidários</a>
-                    </li>
-                    <li>
-                        <a href="#info-platyhelminthes" class="info-platyhelminthes">Platelmintos</a>
-                        <ul>
-                            <li>
-                                <a href="#info-nematoda" class="info-nematoda">Nematelmintos</a>
-                            </li>
-                            <li>
-                                <a href="#info-mollusca" class="info-mollusca">Moluscos</a>
-                            </li>
-                            <li>
-                                <a href="#info-annelida" class="info-annelida">Anelídeos</a>
-                            </li>
-                            <li>
-                                <a href="#info-arthropoda" class="info-arthropoda">Artrópodes</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#info-echinodermata">Equinodermos</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+    
     <div class="info-container">
         <div id="info-sobre" class="info">
             <h3 id="latin">Alumnus quaerere recuperar gradus</h3>
@@ -291,5 +257,24 @@
             </table>
         </div>
     </div>
+    <div class="navigation-buttons">
+        <button onclick="navigate('prev')">Voltar</button>
+        <button onclick="navigate('next')">Avançar</button>
+    </div>
+    <div id="cladogram">
+        <svg version="1.0" viewBox="0 0 1440 810" xmlns="http://www.w3.org/2000/svg" zoomAndPan="magnify">
+            <path transform="matrix(.75 -9.3e-17 9.3e-17 .75 -3.6169 806.25)" d="m-3.4281e-4 2.5h1274.7" fill="none" stroke="#000" stroke-width="5"/>
+            <path transform="matrix(-.75 0 0 -.75 850.07 404.99)" d="m-3.5725e-5 2.5022h665.44" fill="none" stroke="#000" stroke-width="5"/>
+            <path transform="matrix(.0017252 .75 -.75 .0017252 110.87 .010976)" d="m4.53e-4 2.4979 1086.8-9e-6" fill="none" stroke="#000" stroke-width="5" id="path-info-porifera"/>
+            <path transform="matrix(-.00080344 .75 -.75 -.00080344 231.87 .015995)" d="m0.0021846 2.4996 1084.1 1.66e-4" fill="none" stroke="#000" stroke-width="5" id="path-info-cnidaria"/>
+            <path transform="matrix(-.0019475 .75 -.75 -.0019475 352.87 .01665)" d="m-7.7503e-5 2.5025 1084.1-0.002452" fill="none" stroke="#000" stroke-width="5" id="path-info-platyhelminthes"/>
+            <path transform="matrix(0 .75 -.75 0 474.24 .013638)" d="m-0.0025596 2.4977h534.7" fill="none" stroke="#000" stroke-width="5" id="path-info-nematoda"/>
+            <path transform="matrix(0 .75 -.75 0 591.49 .010755)" d="m0.0012856 2.5015h537.48" fill="none" stroke="#000" stroke-width="5" id="path-info-mollusca"/>
+            <path transform="matrix(0 .75 -.75 0 721.87 2e-5)" d="m-2.6667e-5 2.5h537.5" fill="none" stroke="#000" stroke-width="5" id="path-info-annelida"/>
+            <path transform="matrix(0 .75 -.75 0 844.61 .00084398)" d="m-0.0011253 2.5004h537.49" fill="none" stroke="#000" stroke-width="5" id="path-info-arthropoda"/>
+            <path transform="matrix(-.0033279 .74999 -.74999 -.0033279 957.87 .023201)" d="m9.841e-4 2.4983 1086.9 3.48e-4" fill="none" stroke="#000" stroke-width="5" id="path-info-echinodermata"/>
+        </svg>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
